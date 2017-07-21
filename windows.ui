@@ -1,0 +1,1858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Windows</class>
+ <widget class="QDialog" name="Windows">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>乐得瑞体彩终端演示软件</string>
+  </property>
+  <widget class="QPushButton" name="printBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>52</y>
+     <width>270</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/F1-2.png</normaloff>:/images/F1-2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>270</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scanBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>147</y>
+     <width>270</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/F2-2.png</normaloff>:/images/F2-2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>270</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="brandBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>242</y>
+     <width>270</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/F3-2.png</normaloff>:/images/F3-2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>270</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="showBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>444</y>
+     <width>271</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/F4-2.png</normaloff>:/images/F4-2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>271</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="smpPrnBtn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>50</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/1-1-1.png</normaloff>:/images/1-1-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="markPrnBtn">
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>50</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/1-2-1.png</normaloff>:/images/1-2-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="codePrnBtn">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>50</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/1-3-1.png</normaloff>:/images/1-3-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scanerRegnBtn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>145</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/2-1-1.png</normaloff>:/images/2-1-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hscannerRegnBtn">
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>145</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/2-2-1.png</normaloff>:/images/2-2-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitRegnBtn">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>145</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/2-3-1.png</normaloff>:/images/2-3-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="showTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>60</y>
+     <width>351</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;table border=&quot;0&quot; style=&quot;-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;&quot;&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border: none;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="tabStopWidth">
+    <number>50</number>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::NoTextInteraction</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ydjBrandBtn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>243</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/3-1-1.png</normaloff>:/images/3-1-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="yqxBrandBtn">
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>243</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/3-2-1.png</normaloff>:/images/3-2-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="zdyBrandBtn">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>243</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/3-3-1.png</normaloff>:/images/3-3-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="secondVdoBtn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>510</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/4-1-1.png</normaloff>:/images/4-1-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="secondPicBtn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>510</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/4-2-1.png</normaloff>:/images/4-2-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="secondUsbBtn">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>510</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/4-3-1.png</normaloff>:/images/4-3-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="thirdVdoBtn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>610</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/4-4-1.png</normaloff>:/images/4-4-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="thirdPicBtn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>610</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/4-5-1.png</normaloff>:/images/4-5-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="thirdEixtBtn">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>610</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/4-6-1.png</normaloff>:/images/4-6-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bgallLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>768</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="imagesRC.qrc">:/images/background10.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QSlider" name="volumeSlider">
+   <property name="geometry">
+    <rect>
+     <x>348</x>
+     <y>460</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="maximum">
+    <number>100</number>
+   </property>
+   <property name="pageStep">
+    <number>1</number>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+   <property name="tracking">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::NoTicks</enum>
+   </property>
+   <property name="tickInterval">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rebootBtn">
+   <property name="geometry">
+    <rect>
+     <x>794</x>
+     <y>680</y>
+     <width>95</width>
+     <height>88</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/reboot-1.png</normaloff>:/images/reboot-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>95</width>
+     <height>88</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitBtn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>680</y>
+     <width>95</width>
+     <height>88</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/exit-1.png</normaloff>:/images/exit-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>95</width>
+     <height>88</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="shutdownBtn">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>680</y>
+     <width>95</width>
+     <height>88</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/shutdown-1.png</normaloff>:/images/shutdown-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>95</width>
+     <height>88</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="thirdUsbBtn">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>610</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/4-3-1.png</normaloff>:/images/4-3-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="secondEixtBtn">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>510</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/4-6-1.png</normaloff>:/images/4-6-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hwInfoBtn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>338</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/5-1-1.png</normaloff>:/images/5-1-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="iccardBtn">
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>338</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/5-2-1.png</normaloff>
+     <activeoff>:/images/active-off/5-2-4.png</activeoff>
+     <activeon>:/images/active-off/5-2-4.png</activeon>:/images/5-2-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="magcardBtn">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>338</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/5-3-1.png</normaloff>:/images/5-3-1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>124</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="samPrnlabel">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>50</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/1-1-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="prnLifeLabel">
+   <property name="geometry">
+    <rect>
+     <x>651</x>
+     <y>512</y>
+     <width>366</width>
+     <height>157</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="imagesRC.qrc">:/images/printLife.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="printLcdNum">
+   <property name="geometry">
+    <rect>
+     <x>792</x>
+     <y>527</y>
+     <width>161</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Bookman L</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="numDigits">
+    <number>13</number>
+   </property>
+   <property name="digitCount">
+    <number>13</number>
+   </property>
+   <property name="segmentStyle">
+    <enum>QLCDNumber::Flat</enum>
+   </property>
+   <property name="value" stdset="0">
+    <double>0.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="cutLcdNum">
+   <property name="geometry">
+    <rect>
+     <x>792</x>
+     <y>560</y>
+     <width>161</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Bookman L</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="numDigits">
+    <number>13</number>
+   </property>
+   <property name="digitCount">
+    <number>13</number>
+   </property>
+   <property name="segmentStyle">
+    <enum>QLCDNumber::Flat</enum>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lengthLcdNum">
+   <property name="geometry">
+    <rect>
+     <x>792</x>
+     <y>594</y>
+     <width>161</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Bookman L</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="numDigits">
+    <number>13</number>
+   </property>
+   <property name="digitCount">
+    <number>13</number>
+   </property>
+   <property name="segmentStyle">
+    <enum>QLCDNumber::Flat</enum>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="operaTimeLcdNum">
+   <property name="geometry">
+    <rect>
+     <x>792</x>
+     <y>627</y>
+     <width>161</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Bookman L</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="numDigits">
+    <number>13</number>
+   </property>
+   <property name="segmentStyle">
+    <enum>QLCDNumber::Flat</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="markPrnLbe">
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>50</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/1-2-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="codePrnLbe">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>50</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/1-3-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="scanerRegLbe">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>145</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/2-1-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hscannerRegnLbe">
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>145</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/2-2-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="exitRegnLbe">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>145</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/2-3-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ydjBrandLbe">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>243</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/3-1-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="yqxBrandLbe">
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>243</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/3-2-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="zdyBrandLbe">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>243</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/3-3-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hwInfoLbe">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>338</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/5-1-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="iccardLbe">
+   <property name="geometry">
+    <rect>
+     <x>394</x>
+     <y>338</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/5-2-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="magcardLbe">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>338</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/5-3-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="secondVdoLbe">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>510</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/4-1-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="secondPicLbe">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>510</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/4-2-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="secondUsbLbe">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>510</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/4-3-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="secondEixtLbe">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>510</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/4-6-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="thirdVdoLbe">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>610</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/4-4-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="thirdPicLbe">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>610</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/4-5-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="thirdUsbLbe">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>610</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/4-3-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="thirdEixtLbe">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>610</y>
+     <width>124</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images2.qrc">:/images/disableIcon/4-6-2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="gaojiBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>337</y>
+     <width>270</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="imagesRC.qrc">
+     <normaloff>:/images/F5.png</normaloff>:/images/F5.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>270</width>
+     <height>93</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_jiaodui">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>740</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+9</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbn_voiceUp">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>460</y>
+     <width>21</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>+</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbn_vDown">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>460</y>
+     <width>21</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>-</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_toLHSystem">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>740</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_toSCSystem">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>740</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+0</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelType">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>17</y>
+     <width>83</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Abyssinica SIL</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:url(:/images/LA900A.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_tochoiceDialog">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>740</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>bgallLabel</zorder>
+  <zorder>printBtn</zorder>
+  <zorder>scanBtn</zorder>
+  <zorder>brandBtn</zorder>
+  <zorder>showBtn</zorder>
+  <zorder>smpPrnBtn</zorder>
+  <zorder>markPrnBtn</zorder>
+  <zorder>codePrnBtn</zorder>
+  <zorder>scanerRegnBtn</zorder>
+  <zorder>hscannerRegnBtn</zorder>
+  <zorder>exitRegnBtn</zorder>
+  <zorder>showTextEdit</zorder>
+  <zorder>ydjBrandBtn</zorder>
+  <zorder>yqxBrandBtn</zorder>
+  <zorder>zdyBrandBtn</zorder>
+  <zorder>secondVdoBtn</zorder>
+  <zorder>secondPicBtn</zorder>
+  <zorder>secondUsbBtn</zorder>
+  <zorder>thirdVdoBtn</zorder>
+  <zorder>thirdPicBtn</zorder>
+  <zorder>thirdEixtBtn</zorder>
+  <zorder>volumeSlider</zorder>
+  <zorder>rebootBtn</zorder>
+  <zorder>exitBtn</zorder>
+  <zorder>shutdownBtn</zorder>
+  <zorder>thirdUsbBtn</zorder>
+  <zorder>secondEixtBtn</zorder>
+  <zorder>hwInfoBtn</zorder>
+  <zorder>iccardBtn</zorder>
+  <zorder>magcardBtn</zorder>
+  <zorder>samPrnlabel</zorder>
+  <zorder>prnLifeLabel</zorder>
+  <zorder>printLcdNum</zorder>
+  <zorder>cutLcdNum</zorder>
+  <zorder>lengthLcdNum</zorder>
+  <zorder>operaTimeLcdNum</zorder>
+  <zorder>markPrnLbe</zorder>
+  <zorder>codePrnLbe</zorder>
+  <zorder>scanerRegLbe</zorder>
+  <zorder>hscannerRegnLbe</zorder>
+  <zorder>exitRegnLbe</zorder>
+  <zorder>ydjBrandLbe</zorder>
+  <zorder>yqxBrandLbe</zorder>
+  <zorder>zdyBrandLbe</zorder>
+  <zorder>hwInfoLbe</zorder>
+  <zorder>iccardLbe</zorder>
+  <zorder>magcardLbe</zorder>
+  <zorder>secondVdoLbe</zorder>
+  <zorder>secondPicLbe</zorder>
+  <zorder>secondUsbLbe</zorder>
+  <zorder>secondEixtLbe</zorder>
+  <zorder>thirdVdoLbe</zorder>
+  <zorder>thirdPicLbe</zorder>
+  <zorder>thirdUsbLbe</zorder>
+  <zorder>thirdEixtLbe</zorder>
+  <zorder>gaojiBtn</zorder>
+  <zorder>btn_jiaodui</zorder>
+  <zorder>pbn_voiceUp</zorder>
+  <zorder>pbn_vDown</zorder>
+  <zorder>btn_toLHSystem</zorder>
+  <zorder>btn_toSCSystem</zorder>
+  <zorder>labelType</zorder>
+  <zorder>btn_tochoiceDialog</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>printBtn</tabstop>
+  <tabstop>smpPrnBtn</tabstop>
+  <tabstop>markPrnBtn</tabstop>
+  <tabstop>codePrnBtn</tabstop>
+  <tabstop>scanBtn</tabstop>
+  <tabstop>scanerRegnBtn</tabstop>
+  <tabstop>hscannerRegnBtn</tabstop>
+  <tabstop>exitRegnBtn</tabstop>
+  <tabstop>brandBtn</tabstop>
+  <tabstop>ydjBrandBtn</tabstop>
+  <tabstop>yqxBrandBtn</tabstop>
+  <tabstop>zdyBrandBtn</tabstop>
+  <tabstop>gaojiBtn</tabstop>
+  <tabstop>hwInfoBtn</tabstop>
+  <tabstop>iccardBtn</tabstop>
+  <tabstop>magcardBtn</tabstop>
+  <tabstop>showBtn</tabstop>
+  <tabstop>volumeSlider</tabstop>
+  <tabstop>secondVdoBtn</tabstop>
+  <tabstop>secondPicBtn</tabstop>
+  <tabstop>secondUsbBtn</tabstop>
+  <tabstop>secondEixtBtn</tabstop>
+  <tabstop>thirdVdoBtn</tabstop>
+  <tabstop>thirdPicBtn</tabstop>
+  <tabstop>thirdUsbBtn</tabstop>
+  <tabstop>thirdEixtBtn</tabstop>
+  <tabstop>exitBtn</tabstop>
+  <tabstop>rebootBtn</tabstop>
+  <tabstop>shutdownBtn</tabstop>
+  <tabstop>showTextEdit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="images2.qrc"/>
+  <include location="imagesRC.qrc"/>
+ </resources>
+ <connections/>
+</ui>
