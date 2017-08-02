@@ -37,23 +37,24 @@ bool HScannerThread::InitDevice(QString dev)
     int count =0;
     while(1)
     {
-         if(count > 3)
+         if(count > 1)
          break;
          int ret = 0;
-        // for(int i=0;i<2;i++)//初始化两次
          {
           ret = hscanner->BCRInit(NULL,  SO_PATH,SO_PATH);
          }
          if (0 == ret)
          {
              qDebug() << "HScanner Init Success! " << ret;
+             hscanner->BCREnableCode(56);//开启DataMatrix
+             hscanner->BCREnableCode(57);//开启QR码
              return true;
          }
          else
          {
              qDebug() << "HScanner Init Failed! " << ret;
              count++;
-             sleep(1);
+//             sleep(1);
          }
     }
 
@@ -94,33 +95,32 @@ bool HScannerThread::StopRun()
 
 void HScannerThread::run()
 {
-    int errCode = 0;
     char errStr[256] = {0};
     unsigned char ticketInfo[4096] = {0};
 
-
-    if(BCRtype.compare("EM2028") == 0)
+    if(pthread_mutex_trylock(&HscannerMutex))
     {
+            usleep(200000);
+    }
+
+//    if(BCRtype.compare("EM2028") == 0)
 
         while (isWork)
         {
+            //条码枪是否准备好
             if (hscanner->BCRIsReady())
                 break;
-             errCode = hscanner->BCRGetLastErrorCode();
             qDebug() << "HScanner is not ready !";
-            qDebug() << "errCode = " << errCode;
              hscanner->BCRGetLastErrorStr(errStr, 256);
             qDebug() << "errStr = " << errStr;
              usleep(300000);//500ms
-//             emit showText("条码枪初始化失败");
             int count =0;
-            while(count<3)
+            while(count<2)
         {
             int ret = hscanner->BCRInit(NULL, "./conf/hscanner", "./conf/hscanner");
             if (0 == ret)
             {
                 qDebug() << "HScanner Init Success! in run" << ret;
-                //  hscanner->BCRStartScan()
                 isWork = true;
                 break;
             }
@@ -132,24 +132,24 @@ void HScannerThread::run()
             }
         }
             break;
-
         }
     qDebug() << "HScanner is ready!!!";
 
-    while (isWork)  //start只需要调用一次
+   if(isWork)  //start只需要调用一次
     {
         if (hscanner->BCRStartScan())
         {
             qDebug() << "HScanner Start Scan OK...";
             hscanner->BCREnableBeep();
             emit showText("条码枪开始扫描");
-            break;
         }
         else
         {
             qDebug() << "HScanner Start Scan Error...";
         }
-        break;
+    }else {
+        pthread_mutex_unlock(&HscannerMutex);
+        return;
     }
 
     while (isWork)  //每次循环从ScanIsComplete开始
@@ -161,9 +161,14 @@ void HScannerThread::run()
             if (hscanner->BCRScanIsComplete())
             {
                // qDebug() << "HScannerIsComplete is finished";
+
+                if(pthread_mutex_trylock(&HscannerMutex))
+                {
+                        usleep(20000);
+                }
                 break;  //跳出该循环
             }
-            usleep(500000);  //500ms
+            usleep(50000);  //50ms
         }
 
         unsigned int length;
@@ -178,16 +183,17 @@ void HScannerThread::run()
         //字符识别
         memset(ticketInfo, 0, sizeof(ticketInfo)); //每次在读票之前需先清空缓存数据
      //   memset(ticketInfo, 0, 1024*sizeof(char));
-        usleep(500000);  //50ms
+//        usleep(500000);  //50ms
         int size = hscanner->BCRGetTicketInfo(ticketInfo, sizeof(ticketInfo));
         if (0 != size)
         {
-            qDebug() << "EM2028 BCRGetTicketInfo return size value=" << size;
+            qDebug() << "BCRGetTicketInfo return size value=" << size;
             hscanner->BCRBeep(0x00);
-            qDebug()<<"EM2028 ticketInfo[0]"<<ticketInfo[0];
+            qDebug()<<"BCR ticketInfo[0]"<<ticketInfo[0];
            // hscanner->BCRStopScan();
              int type = (int)ticketInfo[0];
-             qDebug()<<"EM2028 scan type="<<type;
+             qDebug()<<"BCR scan type="<<type;
+
             emit showTicketInfo((char*)ticketInfo,type);
         }
         else
@@ -196,11 +202,13 @@ void HScannerThread::run()
 
         }
 
-        usleep(1000000);  //每500ms轮询一次
+        pthread_mutex_unlock(&HscannerMutex);
+        usleep(500000);  //每500ms轮询一次
 
     }
-    }
+    pthread_mutex_unlock(&HscannerMutex);
 
+#if 0
     else if(BCRtype.compare("HR200") == 0)
     {
         while (isWork)
@@ -258,6 +266,7 @@ void HScannerThread::run()
             //hscanner->BCRStartScan();
         }
     }
+#endif
 
     //若线程中没有自己定义的槽函数，可以不调用exec(),即不启动事件循环
    // exec();

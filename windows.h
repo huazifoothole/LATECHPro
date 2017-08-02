@@ -99,7 +99,7 @@ public:
     void hide_label();
     void installFilter();
 
-
+    void setUserIni(int type);
 
 
 protected:

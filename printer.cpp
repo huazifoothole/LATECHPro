@@ -1161,7 +1161,7 @@ bool Printer::PrintHalfCut()
     PSetFont(0,0x22,1);
     PPrintString("半切");
     PFeedLine(10);
-   PCutPaper();
+    PCutPaper();
 }
 
 bool Printer::PrintFullCut()
@@ -1311,7 +1311,7 @@ bool Printer::PrintSampleTicket(int flag)
                     qDebug() << "big:printNum = 3";
                     printNum = 3;
                 }
-                setting.endGroup();
+
 
                 for (int i = 0; i < printNum; i++)
                 {
@@ -1389,7 +1389,6 @@ bool Printer::PrintSampleTicket(int flag)
                             qDebug() << "big:printNum = 3";
                             printNum = 3;
                         }
-                        setting.endGroup();
 
                         for (int i = 0; i < printNum; i++)
                         {

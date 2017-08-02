@@ -905,28 +905,43 @@ void Windows::samplePrint() //样票打印，0大黑标、1小黑标、1一维�
 {
 
     ui->showTextEdit->clear();
-    //ui->showTextEdit->append("－打印大黑标样票");
     printer->PrintMarkTicket(0);
     showPrinterLife();
 
-    //ui->showTextEdit->append("－打印小黑标样票");
+
     printer->PrintMarkTicket(1);
     showPrinterLife();
 
-//    ui->showTextEdit->append("－打印一维码样票");
-//    printer->PrintCodeTicket(1);
-//    showPrinterLife();
-
-    //ui->showTextEdit->append("－打印二维码样票");
     printer->PrintCodeTicket(2);
     showPrinterLife();
 
-    //ui->showTextEdit->append("－打印定长票、非定长票");
     printer->PrintOtherTicket();
 
+    //0 全切 1 半切
+
+
     printer->PrintHalfCut();
+
+    setUserIni(0);
+    int ret = printer->PInit(SO_PATH,SO_PATH);
+
     printer->PrintFullCut();
+
+    setUserIni(1);
+    printer->PInit(SO_PATH,SO_PATH);
+
+
     showPrinterLife();
+}
+
+void Windows::setUserIni(int type){
+        QSettings*  cutSet;
+        QString path = QString(SO_PATH)+QString("/HWILatechPrinter.userconf.ini");
+        cutSet = new QSettings(path, QSettings::IniFormat);
+        cutSet->beginGroup("CONFIG");
+        cutSet->setValue("cuttype",type);
+        cutSet->sync();
+        cutSet->endGroup();
 }
 
 void Windows:: markPrint()  //黑标打印，大黑标
@@ -1548,7 +1563,7 @@ void Windows::showTicketInfo(  char *info,int infotype)    //彩票黑标、PDF4
             infoResult.append(result);
         }
     }
-    else if (152 == type || -104 == type)
+    else if (152 == type || -104 == type || 70 == type)
     {
         qDebug() << "pdf417码" << type;
         ui->showTextEdit->setText("PDF417条码");
@@ -1599,6 +1614,9 @@ void Windows::showTicketInfo(  char *info,int infotype)    //彩票黑标、PDF4
         zdyBrandDialog->hide();
 
 }
+
+
+
 
 void Windows::showText(char *info)  //textEdit->setText槽函数
 {
@@ -2173,8 +2191,6 @@ void Windows::on_btn_toLHSystem_clicked()
     QMessageBox msgBox;
     int msg=msgBox.information(this,"warning", "下次开机将进入<<老化烤机程序>>", QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
 
-
-
     if(msg == QMessageBox::Yes)
     {
         if (printer)
@@ -2236,8 +2252,8 @@ void Windows::on_btn_toLHSystem_clicked()
 //        qDebug("ret = %d",ret);
 //        on_exitBtn_clicked();
 //        qApp->quit();
-        system("ln -s /root/TestSystem/changeLATECH.sh /root/TestSystem/localsetup  -f");
-          qApp->closeAllWindows();
+        system("ln -s /root/TestSystem/changeMachine.sh /root/TestSystem/localsetup  -f");
+        qApp->closeAllWindows();
               exit(1);
     }
     else

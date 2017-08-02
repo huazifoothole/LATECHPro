@@ -4,6 +4,7 @@
 #include <QDebug>
 #include <QThread>
 #include "hscanner.h"
+#include <pthread.h>
 
 class HScannerThread : public QThread
 {
@@ -14,6 +15,7 @@ public:
     ~HScannerThread();
 
 private:
+    pthread_mutex_t HscannerMutex;
 
 public:
     bool InitDevice(QString);
